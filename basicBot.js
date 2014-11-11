@@ -214,7 +214,7 @@
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: "https://www.facebook.com/groups/EDTentertainment",
+            fbLink: "https://www.facebook.com/EDTentertainment",
             youtubeLink: "https://www.youtube.com/user/EDTentertainment",
             website: null,
             dayMessage: "Join to our Facebook group: http://goo.gl/Lwj3i3 - Subscribe to our channel: http://goo.gl/wREyDT - Like our fan page: http://goo.gl/AheXpr", 
