@@ -40,7 +40,7 @@
     "askskip": "/me @%%NAME%%, don't ask for skips.",
     "spam": "/me @%%NAME%%, please don't spam.",
     "roomadvertising": "/me @%%NAME%%, don't post links to other rooms please.",
-    "adfly": "/me @%%NAME%%, please change your autowoot program. We suggest EDT Woot: http://goo.gl/L7eUVN",
+    "adfly": "/me @%%NAME%%, please change your autowoot program. We suggest EDT Woot: http://goo.gl/1lre40",
 
 
     "invalidtime": "/me [@%%NAME%%] Invalid time specified.",
@@ -73,7 +73,7 @@
     "maximumafktimeset": "/me [@%%NAME%%] Maximum afk duration set to %%TIME%% minutes.",
     "afkstatusreset": "/me [@%%NAME%%] Reset the afk status of @%%USERNAME%%.",
     "inactivefor": "/me [@%%NAME%%] @%%USERNAME%% has been inactive for %%TIME%%.",
-    "autowoot": "/me We recommend EDT Woot for autowooting: http://goo.gl/L7eUVN",
+    "autowoot": "/me We recommend EDT Woot for autowooting: http://goo.gl/1lre40",
     "brandambassador": "/me A Brand Ambassador is the voice of the plug.dj users. They promote events, engage the community and share the plug.dj message around the world. For more info: http://blog.plug.dj/brand-ambassadors/",
     "bouncerplusrank": "/me [@%%NAME%%] You have to be manager or up to enable Bouncer+.",
     "chatcleared": "/me [@%%NAME%%] Cleared the chat.",
