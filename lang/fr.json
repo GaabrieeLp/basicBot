@@ -39,7 +39,7 @@
     "askskip": "/me @%%NAME%%, ne demandez pas de passer une musique.",
     "spam": "/me @%%NAME%%, merci de ne pas spammer.",
     "roomadvertising": "/me @%%NAME%%, ne postez pas de liens menant vers d'autres salles.",
-    "adfly": "/me @%%NAME%%, merci de changer votre programme d'Autowoot. Nous vous suggérons EDT Woot: http://goo.gl/L7eUVN",
+    "adfly": "/me @%%NAME%%, merci de changer votre programme d'Autowoot. Nous vous suggérons EDT Woot: http://goo.gl/1lre40",
 
 
     "invalidtime": "/me [@%%NAME%%] Temps spécifié invalide.",
@@ -72,7 +72,7 @@
     "maximumafktimeset": "/me [@%%NAME%%] Durée de l'AFK maximum réglée à %%TIME%% minutes.",
     "afkstatusreset": "/me [@%%NAME%%] Réinitialisation du statut AFK de @%%USERNAME%%.",
     "inactivefor": "/me [@%%NAME%%] @%%USERNAME%% a été inactif pour %%TIME%%.",
-    "autowoot": "/me Nous recommandons EDT Woot pour l'autowooting: http://goo.gl/L7eUVN",
+    "autowoot": "/me Nous recommandons EDT Woot pour l'autowooting: http://goo.gl/1lre40",
     "brandambassador": "/me Un Brand Ambassador est la voix des utilisateurs de plug.dj. Il promouvoient les évènements, font participer la communauté et partagent le message de plug.dj autour du monde. Pour plus d'info: http://blog.plug.dj/brand-ambassadors/",
     "bouncerplusrank": "/me [@%%NAME%%] Vous devez être Manager pour pouvoir activer Bouncer+.",
     "chatcleared": "/me [@%%NAME%%] A nettoyé le chat.",
