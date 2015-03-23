@@ -643,7 +643,7 @@
             },
             changeDJCycle: function () {
                 var toggle = $(".dj-cycle");
-                if (toggle.hasClass("enabled")) {
+                if (toggle.hasClass("enabled")) { // Essa classe na está mais disponível para verificação sem clicar no nome da sala, futuramente terá que ser verificado uma alternativa.
                     //toggle.click();
                     API.moderateDJCycle(true);
                     if (basicBot.settings.cycleGuard) {
@@ -2146,10 +2146,17 @@
                             if (chat.message.length === cmd.length) {
                                 API.sendChat(subChat(basicBot.chat.usedlockskip, {name: chat.un}));
                                 //basicBot.roomUtilities.booth.lockBooth();   // Removido por bug
-                                var toggle = $(".dj-cycle");              // Verifica o estado do cycle antes de ativalo
-                                if (toggle.hasClass("enabled")) {            // ativa se estiver desativado
-                                    basicBot.roomUtilities.changeDJCycle();
-                                }
+                                //var toggle = $(".dj-cycle");              // Verifica o estado do cycle antes de ativalo
+                                //if (toggle.hasClass("enabled")) {            // ativa se estiver desativado
+                                //    basicBot.roomUtilities.changeDJCycle();
+                                //}
+                                
+                                // Função acima parou de funcionar após atualização, porque agora o status do cycle só está disponível se clicar no nome da sala, 
+                                // fora isso, ele fica indisponível. 
+                                // colocarei pra ativar o cycle fixo no inicio e desetivar no fim.
+                                
+                                API.moderateDJCycle(true); // Ativar o Cycle Fixo.
+                                
                                 setTimeout(function (id) {
                                     API.moderateForceSkip();
                                     basicBot.room.skippable = false;
@@ -2180,10 +2187,13 @@
                             if (validReason) {
                                 API.sendChat(subChat(basicBot.chat.usedlockskip, {name: chat.un}));
                                 //basicBot.roomUtilities.booth.lockBooth();   // Removido por bug
-                                var toggle = $(".dj-cycle");              // Verifica o estado do cycle antes de ativalo
-                                if (toggle.hasClass("enabled")) {            // ativa se estiver desativado
-                                    basicBot.roomUtilities.changeDJCycle();
-                                }
+                                //var toggle = $(".dj-cycle");              // Verifica o estado do cycle antes de ativalo
+                                //if (toggle.hasClass("enabled")) {            // ativa se estiver desativado
+                                //    basicBot.roomUtilities.changeDJCycle();
+                                //}
+                                
+                                API.moderateDJCycle(false); // Desativar o Cycle Fixo. - Explicado acima.
+                                
                                 setTimeout(function (id) {
                                     API.moderateForceSkip();
                                     basicBot.room.skippable = false;
