@@ -643,7 +643,7 @@
             },
             changeDJCycle: function () {
                 var toggle = $(".dj-cycle");
-                if !(toggle.hasClass("enabled")) {
+                if (!toggle.hasClass("enabled")) {
                     toggle.click();
                     if (basicBot.settings.cycleGuard) {
                         basicBot.room.cycleTimer = setTimeout(function () {
@@ -2142,7 +2142,7 @@
                                 API.sendChat(subChat(basicBot.chat.usedlockskip, {name: chat.un}));
                                 //basicBot.roomUtilities.booth.lockBooth();   // Removido por bug
                                 var toggle = $(".dj-cycle");              // Verifica o estado do cycle antes de ativalo
-                                if !(toggle.hasClass("enabled")) {            // ativa se estiver desativado
+                                if (!toggle.hasClass("enabled")) {            // ativa se estiver desativado
                                     basicBot.roomUtilities.changeDJCycle();
                                 }
                                 setTimeout(function (id) {
@@ -2176,7 +2176,7 @@
                                 API.sendChat(subChat(basicBot.chat.usedlockskip, {name: chat.un}));
                                 //basicBot.roomUtilities.booth.lockBooth();   // Removido por bug
                                 var toggle = $(".dj-cycle");              // Verifica o estado do cycle antes de ativalo
-                                if !(toggle.hasClass("enabled")) {            // ativa se estiver desativado
+                                if (!toggle.hasClass("enabled")) {            // ativa se estiver desativado
                                     basicBot.roomUtilities.changeDJCycle();
                                 }
                                 setTimeout(function (id) {
