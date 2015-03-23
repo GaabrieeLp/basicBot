@@ -646,7 +646,7 @@
                 console.log(toggle);
                 console.log(toggle.hasClass("enabled"));
                 console.log(!toggle.hasClass("enabled"));
-                if (!toggle.hasClass("enabled")) {
+                if (toggle.hasClass("enabled")) {
                     console.log('entrou no ativar cycle');
                     toggle.click();
                     if (basicBot.settings.cycleGuard) {
@@ -2146,7 +2146,7 @@
                                 API.sendChat(subChat(basicBot.chat.usedlockskip, {name: chat.un}));
                                 //basicBot.roomUtilities.booth.lockBooth();   // Removido por bug
                                 var toggle = $(".dj-cycle");              // Verifica o estado do cycle antes de ativalo
-                                if (!toggle.hasClass("enabled")) {            // ativa se estiver desativado
+                                if (toggle.hasClass("enabled")) {            // ativa se estiver desativado
                                     basicBot.roomUtilities.changeDJCycle();
                                 }
                                 setTimeout(function (id) {
@@ -2180,7 +2180,7 @@
                                 API.sendChat(subChat(basicBot.chat.usedlockskip, {name: chat.un}));
                                 //basicBot.roomUtilities.booth.lockBooth();   // Removido por bug
                                 var toggle = $(".dj-cycle");              // Verifica o estado do cycle antes de ativalo
-                                if (!toggle.hasClass("enabled")) {            // ativa se estiver desativado
+                                if (toggle.hasClass("enabled")) {            // ativa se estiver desativado
                                     basicBot.roomUtilities.changeDJCycle();
                                 }
                                 setTimeout(function (id) {
