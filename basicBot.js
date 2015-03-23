@@ -662,8 +662,6 @@
                             	$("#room-settings").css("display", "none");
                             	 //toggle.click();
                             	setTimeout(function (){$(".dj-cycle > .off").click();}, 600);
-                            	setTimeout(function (){$("#room-settings").css("display", "block");}, 700);
-                    		setTimeout(function (){$("#room-name").click();}, 800);
                             }
                         }, basicBot.settings.cycleMaxTime * 60 * 1000);
                     }
@@ -675,8 +673,6 @@
                     $("#room-settings").css("display", "none");
                     
                     setTimeout(function (){$(".dj-cycle > .off").click();}, 600);
-                    setTimeout(function (){$("#room-settings").css("display", "block");}, 700);
-                    setTimeout(function (){$("#room-name").click();}, 800);
                     clearTimeout(basicBot.room.cycleTimer);
                 }
             },
