@@ -650,16 +650,18 @@
                     //console.log('entrou no ativar cycle');
                     if ($("#room-settings").css("display") != "block")
                     	$("#room-name").click();
+                    $("#room-settings").css("display", "none");
                  
-                    setTimeout(function (){$(".dj-cycle > .off").click(); $("#room-name").click();}, 700);	
+                    setTimeout(function (){$(".dj-cycle > .off").click();}, 1000);	
                     //toggle.click();
                     if (basicBot.settings.cycleGuard) {
                         basicBot.room.cycleTimer = setTimeout(function () {
                             if (!toggle.hasClass("enabled")) {
                             	if ($("#room-settings").css("display") != "block")
                             	     $("#room-name").click();
+                            	$("#room-settings").css("display", "none");
                             	 //toggle.click();
-                            	setTimeout(function (){$(".dj-cycle > .on").click(); $("#room-name").click();}, 700);
+                            	setTimeout(function (){$(".dj-cycle > .on").click();}, 1000);
                             }
                         }, basicBot.settings.cycleMaxTime * 60 * 1000);
                     }
@@ -668,8 +670,9 @@
                     //toggle.click();
                     if ($("#room-settings").css("display") != "block")
                     	$("#room-name").click();
+                    $("#room-settings").css("display", "none");
                     
-                    setTimeout(function (){$(".dj-cycle > .on").click(); $("#room-name").click();}, 700);
+                    setTimeout(function (){$(".dj-cycle > .on").click();}, 1000);
                     clearTimeout(basicBot.room.cycleTimer);
                 }
             },
