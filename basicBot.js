@@ -643,37 +643,21 @@
             },
             changeDJCycle: function () {
                 var toggle = $(".dj-cycle");
-                //console.log(toggle);
-                //console.log(toggle.hasClass("enabled"));
-                //console.log(!toggle.hasClass("enabled"));
                 if (toggle.hasClass("enabled")) {
-                    //console.log('entrou no ativar cycle');
-                    if ($("#room-settings").css("display") != "block")
-                    	$("#room-name").click();
-                    $("#room-settings").css("display", "none");
-                 
-                    setTimeout(function (){$(".dj-cycle > .off").click();}, 1000);
-                    setTimeout(function (){$(".back").click();}, 2000);
                     //toggle.click();
+                    API.moderateDJCycle(true);
                     if (basicBot.settings.cycleGuard) {
                         basicBot.room.cycleTimer = setTimeout(function () {
                             if (!toggle.hasClass("enabled")) {
-                            	if ($("#room-settings").css("display") != "block")
-                            	     $("#room-name").click();
-                            	$("#room-settings").css("display", "none");
-                            	 //toggle.click();
-                            	setTimeout(function (){$(".dj-cycle > .on").click();}, 600);
+                            	//toggle.click();
+                            	API.moderateDJCycle(false);
                             }
                         }, basicBot.settings.cycleMaxTime * 60 * 1000);
                     }
                 }
                 else {
                     //toggle.click();
-                    if ($("#room-settings").css("display") != "block")
-                    	$("#room-name").click();
-                    $("#room-settings").css("display", "none");
-                    
-                    setTimeout(function (){$(".dj-cycle > .on").click();}, 600);
+                    API.moderateDJCycle(false);
                     clearTimeout(basicBot.room.cycleTimer);
                 }
             },
