@@ -675,7 +675,7 @@
                     $("#room-settings").css("display", "none");
                     
                     setTimeout(function (){$(".dj-cycle > .off").click();}, 600);
-                    setTimeout(function (){$("#room-settings").css("display", "block");, 700);
+                    setTimeout(function (){$("#room-settings").css("display", "block");}, 700);
                     setTimeout(function (){$("#room-name").click();}, 800);
                     clearTimeout(basicBot.room.cycleTimer);
                 }
