@@ -815,7 +815,7 @@
             console.Log(woots)
 
             if (basicBot.settings.voteSkip) {
-                if ((mehs - grabs) >= (basicBot.settings.voteSkipLimit)) {
+                if ((mehs - grabs) > (basicBot.settings.voteSkipLimit)) {
                     API.sendChat(subChat(basicBot.chat.voteskipexceededlimit, {name: dj.username, limit: basicBot.settings.voteSkipLimit}));
                     API.moderateForceSkip();
                 }
