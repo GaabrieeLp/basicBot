@@ -807,10 +807,15 @@
 
             var mehs = API.getScore().negative;
             var woots = API.getScore().positive;
+            var grabs = API.getScore().grabs;
             var dj = API.getDJ();
+            
+            console.Log('teve voto');
+            console.Log(mehs);
+            console.Log(woots)
 
             if (basicBot.settings.voteSkip) {
-                if ((mehs - woots) >= (basicBot.settings.voteSkipLimit)) {
+                if ((mehs - grabs) >= (basicBot.settings.voteSkipLimit)) {
                     API.sendChat(subChat(basicBot.chat.voteskipexceededlimit, {name: dj.username, limit: basicBot.settings.voteSkipLimit}));
                     API.moderateForceSkip();
                 }
