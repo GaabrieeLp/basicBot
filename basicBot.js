@@ -643,11 +643,15 @@
             },
             changeDJCycle: function () {
                 var toggle = $(".dj-cycle");
+                console.log(toggle);
+                console.log(toggle.hasClass("enabled"));
+                console.log(!toggle.hasClass("enabled"));
                 if (!toggle.hasClass("enabled")) {
+                    console.log('entrou no ativar cycle');
                     toggle.click();
                     if (basicBot.settings.cycleGuard) {
                         basicBot.room.cycleTimer = setTimeout(function () {
-                            if (toggle.hasClass("enabled")) toggle.click();
+                            if (!toggle.hasClass("enabled")) toggle.click();
                         }, basicBot.settings.cycleMaxTime * 60 * 1000);
                     }
                 }
