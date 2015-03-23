@@ -810,12 +810,13 @@
             var grabs = API.getScore().grabs;
             var dj = API.getDJ();
             
-            console.Log('teve voto');
-            console.Log(mehs);
-            console.Log(woots)
+            console.log('teve voto');
+            console.log(mehs);
+            console.log(woots);
 
             if (basicBot.settings.voteSkip) {
                 if ((mehs - grabs) > (basicBot.settings.voteSkipLimit)) {
+                    console.log('entrou na função');
                     API.sendChat(subChat(basicBot.chat.voteskipexceededlimit, {name: dj.username, limit: basicBot.settings.voteSkipLimit}));
                     API.moderateForceSkip();
                 }
