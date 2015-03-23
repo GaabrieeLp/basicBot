@@ -643,20 +643,22 @@
             },
             changeDJCycle: function () {
                 var toggle = $(".dj-cycle");
-                console.log(toggle);
-                console.log(toggle.hasClass("enabled"));
-                console.log(!toggle.hasClass("enabled"));
+                //console.log(toggle);
+                //console.log(toggle.hasClass("enabled"));
+                //console.log(!toggle.hasClass("enabled"));
                 if (toggle.hasClass("enabled")) {
-                    console.log('entrou no ativar cycle');
-                    toggle.click();
+                    //console.log('entrou no ativar cycle');
+                    $(".dj-cycle > .off").click()
+                    //toggle.click();
                     if (basicBot.settings.cycleGuard) {
                         basicBot.room.cycleTimer = setTimeout(function () {
-                            if (!toggle.hasClass("enabled")) toggle.click();
+                            if (!toggle.hasClass("enabled")) $(".dj-cycle > .on").click(); //toggle.click();
                         }, basicBot.settings.cycleMaxTime * 60 * 1000);
                     }
                 }
                 else {
-                    toggle.click();
+                    //toggle.click();
+                    $(".dj-cycle > .on").click()
                     clearTimeout(basicBot.room.cycleTimer);
                 }
             },
@@ -814,13 +816,13 @@
             var grabs = API.getScore().grabs;
             var dj = API.getDJ();
             
-            console.log('teve voto');
-            console.log(mehs);
-            console.log(woots);
+            //console.log('teve voto');
+            //console.log(mehs);
+            //console.log(woots);
 
             if (basicBot.settings.voteSkip) {
                 if ((mehs - grabs) > (basicBot.settings.voteSkipLimit)) {
-                    console.log('entrou na função');
+                    //console.log('entrou na função');
                     API.sendChat(subChat(basicBot.chat.voteskipexceededlimit, {name: dj.username, limit: basicBot.settings.voteSkipLimit}));
                     API.moderateForceSkip();
                 }
