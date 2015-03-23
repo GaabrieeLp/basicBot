@@ -648,14 +648,16 @@
                 //console.log(!toggle.hasClass("enabled"));
                 if (toggle.hasClass("enabled")) {
                     //console.log('entrou no ativar cycle');
-                    $("#room-name").click();
+                    if ($("#room-settings").css("display") != "block")
+                    	$("#room-name").click();
                     $(".dj-cycle > .off").click();
                     $("#room-name").click();
                     //toggle.click();
                     if (basicBot.settings.cycleGuard) {
                         basicBot.room.cycleTimer = setTimeout(function () {
                             if (!toggle.hasClass("enabled")) {
-                            	$("#room-name").click();
+                            	if ($("#room-settings").css("display") != "block")
+                            	     $("#room-name").click();
                             	$(".dj-cycle > .on").click(); //toggle.click();
                             	$("#room-name").click();
                             }
@@ -664,7 +666,8 @@
                 }
                 else {
                     //toggle.click();
-                    $("#room-name").click();
+                    if ($("#room-settings").css("display") != "block")
+                    	$("#room-name").click();
                     $(".dj-cycle > .on").click();
                     $("#room-name").click();
                     clearTimeout(basicBot.room.cycleTimer);
