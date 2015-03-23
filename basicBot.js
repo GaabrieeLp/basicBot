@@ -653,7 +653,7 @@
                     $("#room-settings").css("display", "none");
                  
                     setTimeout(function (){$(".dj-cycle > .off").click();}, 700);
-                    setTimeout(function (){$(".back").click();}, 1400);
+                    setTimeout(function (){$(".back").click();}, 1700);
                     //toggle.click();
                     if (basicBot.settings.cycleGuard) {
                         basicBot.room.cycleTimer = setTimeout(function () {
