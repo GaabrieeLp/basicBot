@@ -651,7 +651,7 @@
                     if ($("#room-settings").css("display") != "block")
                     	$("#room-name").click();
                     $(".dj-cycle > .off").click();
-                    $("#room-name").click();
+                    setTimeout(function (){$("#room-name").click();}, 500);	
                     //toggle.click();
                     if (basicBot.settings.cycleGuard) {
                         basicBot.room.cycleTimer = setTimeout(function () {
@@ -659,7 +659,7 @@
                             	if ($("#room-settings").css("display") != "block")
                             	     $("#room-name").click();
                             	$(".dj-cycle > .on").click(); //toggle.click();
-                            	$("#room-name").click();
+                            	setTimeout(function (){$("#room-name").click();}, 500);
                             }
                         }, basicBot.settings.cycleMaxTime * 60 * 1000);
                     }
@@ -669,7 +669,7 @@
                     if ($("#room-settings").css("display") != "block")
                     	$("#room-name").click();
                     $(".dj-cycle > .on").click();
-                    $("#room-name").click();
+                    setTimeout(function (){$("#room-name").click();}, 500);
                     clearTimeout(basicBot.room.cycleTimer);
                 }
             },
