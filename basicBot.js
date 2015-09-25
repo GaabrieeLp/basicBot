@@ -2691,9 +2691,8 @@
                         var durationOnline = Date.now() - launchT;
                         var since = basicBot.roomUtilities.msToStr(durationOnline);
                         msg += subChat(basicBot.chat.activefor, {time: since});
-                        msg += '. ';
                         
-                        msg += basicBot.chat.version + ': ' + basicBot.version;
+                        msg += ' (' +basicBot.chat.version + ' ' + basicBot.version + ')';
 
                         return API.sendChat(msg);
                     }
