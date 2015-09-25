@@ -57,6 +57,7 @@
     "afksremoved": "AFK's removed",
     "afklimit": "AFK limit",
     "autoskip": "autoskip",
+    "version": "Version",
     "newblacklisted": "/me [@%%NAME%%] This track belongs on the %%BLACKLIST%% blacklist! [ %%AUTHOR%% - %%TITLE%% - %%MID%% ]",
     "cycleguard": "cycleguard",
     "timeguard": "timeguard",
