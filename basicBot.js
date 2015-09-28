@@ -1195,6 +1195,7 @@
             setInterval(basicBot.roomUtilities.updateBlacklists, 60 * 60 * 1000);
             basicBot.getNewBlacklistedSongs = basicBot.roomUtilities.exportNewBlacklistedSongs;
             basicBot.logNewBlacklistedSongs = basicBot.roomUtilities.logNewBlacklistedSongs;
+            basicBot.roomUtilities.dubmessage();
             if (basicBot.room.roomstats.launchTime === null) {
                 basicBot.room.roomstats.launchTime = Date.now();
             }
@@ -2279,10 +2280,8 @@
                 }
             },
             
-            
-
-            messageCommand: {
-                command: 'message',
+            dubmessageCommand: {
+                command: 'dubmessage',
                 rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -2293,7 +2292,7 @@
                     }
                 }
             },
-
+            
             motdCommand: {
                 command: 'motd',
                 rank: 'bouncer',
