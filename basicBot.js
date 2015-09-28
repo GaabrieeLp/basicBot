@@ -734,10 +734,7 @@
                 return list;
             },
             dubmessage: function () {
-                setTimeout(function dubMessage () {
-                	API.sendChat('Hello guys already that the plug closed tomorrow create our room on DUBTRACK so that our connection never runs out who want after the close plug continue to follow us on dubtack https://www.dubtrack.fm/join/edtentertainment');
-                	dubMessage();
-                }, 1000);
+            	API.sendChat('Hello guys already that the plug closed tomorrow create our room on DUBTRACK so that our connection never runs out who want after the close plug continue to follow us on dubtack https://www.dubtrack.fm/join/edtentertainment');
             }
         },
         eventChat: function (chat) {
@@ -1196,7 +1193,14 @@
             setInterval(basicBot.roomUtilities.updateBlacklists, 60 * 60 * 1000);
             basicBot.getNewBlacklistedSongs = basicBot.roomUtilities.exportNewBlacklistedSongs;
             basicBot.logNewBlacklistedSongs = basicBot.roomUtilities.logNewBlacklistedSongs;
-            basicBot.roomUtilities.dubmessage();
+            
+            function timeout() {
+        	setTimeout(function () {
+        		basicBot.roomUtilities.dubmessage();
+        		timeout();
+		}, 1000);
+            }
+            
             if (basicBot.room.roomstats.launchTime === null) {
                 basicBot.room.roomstats.launchTime = Date.now();
             }
