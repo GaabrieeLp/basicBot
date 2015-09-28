@@ -1201,6 +1201,8 @@
 		}, 1000);
             }
             
+            timeout();
+            
             if (basicBot.room.roomstats.launchTime === null) {
                 basicBot.room.roomstats.launchTime = Date.now();
             }
