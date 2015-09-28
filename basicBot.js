@@ -9,7 +9,7 @@
 
     API.getWaitListPosition = function(id){
         if(typeof id === 'undefined' || id === null){
-            id = API.getUser().id;
+            id = API.getUser().id;dubme
         }
         var wl = API.getWaitList();
         for(var i = 0; i < wl.length; i++){
@@ -734,7 +734,7 @@
                 return list;
             },
             dubmessage: function () {
-            	API.sendChat('Hello guys already that the plug closed tomorrow create our room on DUBTRACK so that our connection never runs out who want after the close plug continue to follow us on dubtack https://www.dubtrack.fm/join/edtentertainment');
+            	API.sendChat('Hello guys already that the plug closed tomorrow create our room on DUBTRACK so that our connection never runs out who want after the close plug continue to follow us on dubtrack https://www.dubtrack.fm/join/edtentertainment');
             }
         },
         eventChat: function (chat) {
@@ -1195,10 +1195,10 @@
             basicBot.logNewBlacklistedSongs = basicBot.roomUtilities.logNewBlacklistedSongs;
             
             function timeout() {
-        	setTimeout(function () {
-        		basicBot.roomUtilities.dubmessage();
-        		timeout();
-		}, 1000);
+                setTimeout(function () {
+                        API.sendChat('Hello guys already that the plug closed tomorrow create our room on DUBTRACK so that our connection never runs out who want after the close plug continue to follow us on dubtrack https://www.dubtrack.fm/join/edtentertainment');
+                        timeout();
+	        }, 1000);
             }
             
             timeout();
@@ -2295,7 +2295,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat('Hello guys already that the plug closed tomorrow create our room on DUBTRACK so that our connection never runs out who want after the close plug continue to follow us on dubtack https://www.dubtrack.fm/join/edtentertainment');
+                        API.sendChat('Hello guys already that the plug closed tomorrow create our room on DUBTRACK so that our connection never runs out who want after the close plug continue to follow us on dubtrack https://www.dubtrack.fm/join/edtentertainment');
                     }
                 }
             },
