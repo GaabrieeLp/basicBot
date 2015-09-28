@@ -1201,7 +1201,7 @@
                 	console.log('aqui3');
                         API.sendChat('Hello guys already that the plug closed tomorrow create our room on DUBTRACK so that our connection never runs out who want after the close plug continue to follow us on dubtrack https://www.dubtrack.fm/join/edtentertainment');
                         timeout();
-	        }, 1000);
+	        }, 15*60*1000);
             }
             console.log('aqui4');
             timeout();
