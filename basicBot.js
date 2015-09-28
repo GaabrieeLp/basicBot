@@ -735,8 +735,8 @@
             },
             dubmessage: function () {
             	API.sendChat('Hello guys already that the plug closed tomorrow create our room on DUBTRACK so that our connection never runs out who want after the close plug continue to follow us on dubtack https://www.dubtrack.fm/join/edtentertainment');
-                setTimeout(function () {
-                	basicBot.roomUtilities.dubmessage();	
+                setTimeout(function dubMessage () {
+                	dubMessage();
                 }, 1000);
             }
         },
