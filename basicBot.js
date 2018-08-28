@@ -1191,19 +1191,6 @@
             basicBot.getNewBlacklistedSongs = basicBot.roomUtilities.exportNewBlacklistedSongs;
             basicBot.logNewBlacklistedSongs = basicBot.roomUtilities.logNewBlacklistedSongs;
             
-            console.log('aqui1');
-            function timeout() {
-            	console.log('aqui2');
-                setTimeout(function () {
-                	console.log('aqui3');
-                        API.sendChat('Hello guys already that the plug closed tomorrow create our room on DUBTRACK so that our connection never runs out who want after the close plug continue to follow us on dubtrack https://www.dubtrack.fm/join/edtentertainment');
-                        timeout();
-	        }, 5*60*1000);
-            }
-            console.log('aqui4');
-            timeout();
-            console.log('aqui5');
-            
             if (basicBot.room.roomstats.launchTime === null) {
                 basicBot.room.roomstats.launchTime = Date.now();
             }
