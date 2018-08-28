@@ -732,9 +732,6 @@
                     });
                 }
                 return list;
-            },
-            dubmessage: function () {
-            	API.sendChat('Hello guys already that the plug closed tomorrow create our room on DUBTRACK so that our connection never runs out who want after the close plug continue to follow us on dubtrack https://www.dubtrack.fm/join/edtentertainment');
             }
         },
         eventChat: function (chat) {
@@ -2287,19 +2284,6 @@
                             return API.sendChat(subChat(basicBot.chat.maxlengthtime, {name: chat.un, time: basicBot.settings.maximumSongLength}));
                         }
                         else return API.sendChat(subChat(basicBot.chat.invalidtime, {name: chat.un}));
-                    }
-                }
-            },
-            
-            dubmessageCommand: {
-                command: 'dubmessage',
-                rank: 'bouncer',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat('Hello guys already that the plug closed tomorrow create our room on DUBTRACK so that our connection never runs out who want after the close plug continue to follow us on dubtrack https://www.dubtrack.fm/join/edtentertainment');
                     }
                 }
             },
