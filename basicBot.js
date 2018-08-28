@@ -181,7 +181,7 @@
     var basicBot = {
         version: "2.2.1",
         status: false,
-        name: "basicBot",
+        name: "EDT basicBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/GaabrieeLp/basicBot/master/basicBot.js",
         cmdLink: "http://goo.gl/7kLdkf",
