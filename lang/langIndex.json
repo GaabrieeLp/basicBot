@@ -1,5 +1,5 @@
 {
-    "english": "https://rawgit.com/GaabrieeLp/basicBot/master/lang/en.json",
-    "portuguese": "https://rawgit.com/GaabrieeLp/basicBot/master/lang/pt.json",
-    "french": "https://rawgit.com/GaabrieeLp/basicBot/master/lang/fr.json"
+    "english": "https://cdn.jsdelivr.net/gh/GaabrieeLp/basicBot@master/lang/en.json",
+    "portuguese": "https://cdn.jsdelivr.net/gh/GaabrieeLp/basicBot@master/lang/pt.json",
+    "french": "https://cdn.jsdelivr.net/gh/GaabrieeLp/basicBot@master/lang/fr.json"
 }
