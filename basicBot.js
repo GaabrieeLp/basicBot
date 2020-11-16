@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/GaabrieeLp/basicBot/master/lang/langIndex.json", function (json) {
+        $.get("https://cdn.jsdelivr.net/gh/GaabrieeLp/basicBot@master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -183,9 +183,9 @@
         status: false,
         name: "EDT basicBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/GaabrieeLp/basicBot/master/basicBot.js",
+        scriptLink: "https://cdn.jsdelivr.net/gh/GaabrieeLp/basicBot@master/basicBot.js",
         cmdLink: "http://goo.gl/7kLdkf",
-        chatLink: "https://rawgit.com/GaabrieeLp/basicBot/master/lang/en.json",
+        chatLink: "https://cdn.jsdelivr.net/gh/GaabrieeLp/basicBot@master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -194,7 +194,7 @@
             botName: "EDT-ChatBot",
 
             language: "english",
-            chatLink: "https://rawgit.com/GaabrieeLp/basicBot/master/lang/en.json",
+            chatLink: "https://cdn.jsdelivr.net/gh/GaabrieeLp/basicBot@master/lang/en.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
@@ -247,8 +247,8 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/GaabrieeLp/basicBot/master/blacklists/NSFW.json",
-                OP: "https://rawgit.com/GaabrieeLp/basicBot/master/blacklists/OP.json"
+                NSFW: "https://cdn.jsdelivr.net/gh/GaabrieeLp/basicBot@master/blacklists/NSFW.json",
+                OP: "https://cdn.jsdelivr.net/gh/GaabrieeLp/basicBot@master/blacklists/OP.json"
             }
         },
         room: {
